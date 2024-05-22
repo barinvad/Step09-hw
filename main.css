@@ -1,0 +1,77 @@
+*,
+*::after,
+*,::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.firstScreen{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.firstScreen video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 15;
+}
+
+.firstScreenBody{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstScreenBody .title{
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+.firstScreenBody .subTitle{
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+}
+.wrapper{
+    min-width: 990px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wrapper img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.wrapper ul{
+    list-style-position: inside;
+}
+.wrapper p,
+.wrapper li,{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
